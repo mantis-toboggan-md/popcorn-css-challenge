@@ -3,3 +3,62 @@ Header background - #FFDBAA
 button - #805215
 Header Text - #553100
 Main background - #D4A76A*/
+body{
+  display:grid;
+  grid-template-rows: 20% 80%;
+  grid-template-columns: 100%;
+  font-family: sans-serif;
+  margin: 0;
+}
+header{
+  grid-column: span 10;
+  grid-row: span 1;
+  background-color: #FFDBAA;
+  height: 120px;
+  border-bottom: 1px solid black;
+}
+h1{
+  float:left;
+  clear:right;
+  margin-left: 20px;
+}
+nav{
+  float:right;
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+nav li{
+  list-style: none;
+  display: inline;
+  grid-column-start: 7;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.fakeButton{
+    background-color: #805215;
+    padding: 10px;
+    margin-right: 20px;
+    color:white;
+    text-align: center;
+    font-weight: bold;
+}
+main{
+  background-color:#D4A76A;
+  display:grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+}
+#flights, #groupTrips, #discountFlights, #aboutUs {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 10px 1px black;
+}
+#aboutUs{
+  grid-column: span 3;
+}
+h3{
+  text-align: center;
+  margin-top: 0px;
+}
