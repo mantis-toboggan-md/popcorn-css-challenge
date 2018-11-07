@@ -27,7 +27,7 @@ nav{
   margin-top: 21px;
   margin-bottom: 21px;
 }
-nav li{
+nav button{
   list-style: none;
   display: inline;
   grid-column-start: 7;
@@ -42,6 +42,11 @@ nav li{
     color:white;
     text-align: center;
     font-weight: bold;
+    border:none;
+}
+section .fakeButton{
+  display: block;
+  margin: auto;
 }
 main{
   background-color:#D4A76A;
